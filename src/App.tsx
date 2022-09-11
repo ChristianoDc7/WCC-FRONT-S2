@@ -37,7 +37,6 @@ function App() {
           <div className="header">
             <div className="logo">Wingle</div>
             {isSmall && <div className="pdp"></div>}
-            
           </div>
           <div className="main">
             <nav>
