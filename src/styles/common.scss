@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap');
+
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+}
+
+
+@mixin center-align {
+  display: flex;
+  align-items: center;
+}
+@mixin center-column {
+    display: flex;
+    justify-content: center;
+}
+
+.App{
+  @include center-align;
+  @include center-column;
+  background-color: #3D339A;
+  width:100vw;
+  height:100vh;
+}
+@mixin column {
+  display: flex;
+  flex-direction: column;
+
+}
+.card{
+  width: 60vw;
+  height: 87vh;
+  background-color: #fff; 
+  border-radius: 20px;	
+  padding: 35px;
+  @include column;
+  row-gap: 50px;
+}
+
+.swiper-contain{
+    display: flex;
+    column-gap: 20px;
+    background-color: #fff;
+}
+.swiper-text {
+  a {
+    color : #ffab00;
+    font-size: 13px
+  };
+  h3{
+    font-size: 14px;
+  };
+  
+}
+.swiper-image{
+  width:21vw;
+  height:25vh;
+  overflow: hidden;
+  border-radius: 20px;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.main{
+  @include column;
+  row-gap: 30px;
+}
+.centerJustify{
+  display: flex;
+  justify-content: center;
+}
+.column {
+  display: flex;
+  flex-direction: column;
+}
+.card-route{
+  height: 26vh;
+  width: 10vw;
+  border-radius: 20px;
+  box-shadow: 0px 4px 8px -3px rgba(0,0,0,0.52);
+  padding-block: 15px;
+  padding-inline: 10px;
+  justify-content: space-between;
+  text-align: center;
+  @include center-align;
+  @include column;
+}
+
+.mySwiper{
+    max-height: 25vh;
+    max-width: 29vw;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+    
+}
+.swiper-pagination-bullet{
+  
+}
