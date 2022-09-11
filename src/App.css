@@ -5,6 +5,9 @@
 
   .swiper-pagination-vertical.swiper-pagination-bullets, .swiper-vertical>.swiper-pagination-bullets{
     top:87% !important;
-    right:20% !important;
+    right:24% !important;
     
+  }
+  @media screen and (max-width: 768px){
+     
   }

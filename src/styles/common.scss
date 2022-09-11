@@ -23,6 +23,7 @@
   background-color: #3D339A;
   width:100vw;
   height:100vh;
+  
 }
 @mixin column {
   display: flex;
@@ -30,22 +31,23 @@
 
 }
 .card{
-  width: 69vw;
+  width: 67vw;
   height: 87vh;
   background-color: #fff; 
   border-radius: 20px;	
-  padding: 35px;
+  padding: 40px;
   display: flex;
-  flex-wrap: wrap
+  flex-wrap: wrap;
+  overflow: scroll;
 }
 .left {
   @include column;
   row-gap: 50px;
-  width: 60%;
+  width: 63%;
 }
 .right{
-  row-gap: 50px;
-  width: 40%;
+  row-gap: 40px;
+  width: 37%;
 
   display: flex;
   flex-direction: column;
@@ -61,10 +63,17 @@
     color : #ffab00;
     font-size: 13px
   };
-  h3{
-    font-size: 14px;
-  };
+
   
+}
+.header{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  .pdp{
+    width: 35px;
+    height: 35px;
+  }
 }
 .swiper-image{
   width:21vw;
@@ -101,7 +110,7 @@
 
 .mySwiper{
     max-height: 25vh;
-    max-width: 29vw;
+    max-width: 30vw;
     margin-left: 0 !important;
     margin-right: 0 !important;
     
@@ -112,21 +121,42 @@
   border-radius: 50%;
   overflow: hidden;
  }
+ h3{
+  font-size: 18px;
+  font-weight: 700
+};
+h4{
+  font-size: 15 px
+}
  .profile{
     @include center-align;
     flex-direction: column;
     width: 100%;
     row-gap: 5px;
+    padding-inline: 20px;
     span{
       font-size: 12px;
       color: #3D339A;
       cursor: pointer;
     }
+    .infos{
+      display: flex;
+      flex-direction: column;
+      row-gap: 8px;
+      p{
+        font-size: 13px
+      }
+    }
+ }
+ .pictos{
+    @include center-align;
+    flex-direction: column;
+    row-gap: 7px;
  }
 
  .pdp{
-    width: 10vh;
-    height: 10vh;
+    width: 11vh;
+    height: 11vh;
     
     background-image: url("../../public/pdp.gif");
     background-size: cover;
@@ -140,18 +170,19 @@
 
 
  .curvie{
-  height: 87vh;
+  height: 87.1vh;
   position: absolute;
   z-index: 99;
   top: 6.4%;
   pointer-events: none;
-  left: 37%;
+  left: 44%;
   path{
     fill: #3D339A;
-  }
+  };
+  
  }
  .cv2{
-  left: 36.5%;
+  left: 43.3%;
   path{
     fill: #6052FA;
   }
