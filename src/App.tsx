@@ -9,6 +9,9 @@ import { Compass } from "./widget/Compass";
 import { Curve } from "./widget/Curve";
 import { Route } from "./widget/Route";
 import { Profile } from "./components/Profile";
+import { Curve2 } from "./widget/Curve2";
+import { Activities } from "./components/Activities";
+import ContactSection from "./components/ContactSection";
 
 function App() {
   return (
@@ -36,13 +39,16 @@ function App() {
               title="Dangerous hikes"
               icon={<Route height="73px" width="73px" />}
             />
+            
           </div>
 
-          {/* <Curve height="100px" />
-          <Curve height="100px" rotation="90" /> */}
+          <Curve className="curvie"/>
+          <Curve2 className="curvie cv2"/>
         </div>
         <div className="right">
             <Profile />
+            <Activities />
+            <ContactSection />
         </div>
       </div>
     </div>

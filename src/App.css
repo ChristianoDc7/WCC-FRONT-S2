@@ -1,3 +1,10 @@
-.swiper-pagination-bullet-active{
-    color: red;
-}
+
+  .swiper-pagination-vertical.swiper-pagination-bullets .swiper-pagination-bullet, .swiper-vertical>.swiper-pagination-bullets .swiper-pagination-bullet{
+    background-color: #6052FA;
+  }
+
+  .swiper-pagination-vertical.swiper-pagination-bullets, .swiper-vertical>.swiper-pagination-bullets{
+    top:87% !important;
+    right:20% !important;
+    
+  }

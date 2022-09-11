@@ -1,0 +1,69 @@
+@import '../styles/common.scss';
+
+.activity{
+    @include center-align;
+    width:100%;
+    justify-content: space-between;
+}
+.activity-wrapper{
+    width: 100%;
+}
+.avatar{
+    vertical-align: middle;
+    width: 33px;
+    height: 33px;
+    border-radius: 50%;
+    margin-left: -12px;
+    border: 1px solid white;
+    &:hover{
+        cursor: pointer;
+    }
+}
+.text-middle{
+    line-height: 18px;
+    font-size: 13px;
+}
+.mountain{
+    path{
+        fill: #ea2193;
+    }
+}
+.start-icon{
+    min-width: 64px;
+    @include center-column
+}
+.desc, .act{
+    @include center-align;
+    column-gap: 12px;
+}
+.act{
+    display: flex;
+    column-gap: 15px;
+}
+.kayak{
+    path{
+        fill: #ffab00;
+    }
+}
+.three-points{
+    @include center-align;
+    @include center-column;
+    cursor: pointer;
+    width: 33px;
+    height: 33px;
+    border-radius: 50%;
+    transition: all .3s ease;
+    &:hover{
+        background-color: rgba(215, 215, 215, 0.634);
+    }
+}
+.activity-wrapper{
+    display: flex;
+    flex-direction: column;
+    row-gap: 40px;
+}
+
+.icons{
+    display: flex;
+    column-gap: 15px;
+}
