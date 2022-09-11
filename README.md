@@ -2,6 +2,6 @@
 # #techzara_wcc2 <br>
 Just open the index.html file and enjoy 😉 <br>
 
-<a href="https://christianodc7.github.io/wcc-front-s1/"> Preview et démo de la page ici </a> <br>
-https://christianodc7.github.io/wcc-front-s1/
+<a href="https://wcc-front-s2.vercel.app/"> Preview et démo de la page ici </a> <br>
+https://wcc-front-s2.vercel.app/
 
