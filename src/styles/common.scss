@@ -35,10 +35,13 @@
   background-color: #fff; 
   border-radius: 20px;	
   padding: 35px;
+  display: flex;
+  flex-wrap: wrap
+}
+.left {
   @include column;
   row-gap: 50px;
 }
-
 .swiper-contain{
     display: flex;
     column-gap: 20px;
@@ -94,6 +97,26 @@
     margin-right: 0 !important;
     
 }
-.swiper-pagination-bullet{
-  
-}
+ @mixin rounded{
+  border-radius: 50%;
+  overflow: hidden;
+ }
+ .profile{
+    @include center-align;
+    flex-direction: column;
+    width: 100%;
+ }
+
+ .pdp{
+    width: 10vh;
+    height: 10vh;
+    
+    background-image: url("../../public/pdp.gif");
+    background-size: cover;
+    @include rounded;
+    
+ }
+
+ .infos{
+  text-align: center;
+ }
